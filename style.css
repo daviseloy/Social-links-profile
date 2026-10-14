@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter-VariableFont.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 15px;
+    height: 615px;
+    width: 385px;
+    padding: 30px 10px;
+    row-gap: 6px;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.location {
+    color: hsl(75, 94%, 57%);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: -20px;
+}
+
+.front {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.social {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 300px;
+    background-color: hsl(0, 0%, 20%);
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.content a{
+    color: white;
+    text-decoration: none;
+}
+.content:hover{
+    background-color: hsl(75, 94%, 57%);
+    cursor: pointer;
+}
+.content:hover a{
+    color: black;
+}
+
+
+
+/* Mobile */
+@media (max-width: 37.5rem) {
+    body {
+        padding: 24px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 385px;
+        height: auto;
+        padding: 24px;
+        row-gap: 16px;
+    }
+
+    img {
+        width: 88px;
+        height: 88px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        margin-top: -10px;
+    }
+
+    .front {
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .social {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .content {
+        width: 100%;
+        min-height: 45px;
+    }
+}
+.attribution{
+    font-family: "Inter", sans-serif;
+}
